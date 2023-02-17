@@ -499,6 +499,7 @@ struct CarParams {
   radarTimeStep @45: Float32 = 0.05;  # time delta between radar updates, 20Hz is very standard
   fingerprintSource @49: FingerprintSource;
   networkLocation @50 :NetworkLocation;  # Where Panda/C2 is integrated into the car's CAN network
+  hasZss @65: Bool; # true if ZSS is detected
   enhancedScc @68 :Bool;  # True if ESCC radar interceptor is detected
   standStill @69 :Bool;
   latActive @71 :Bool;
